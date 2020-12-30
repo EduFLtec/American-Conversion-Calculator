@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(82, 168, 197);
+}
+
+.accordion-title{
+  background-color: rgb(115, 173, 115);
+}
+
+.accordion-content {
+  background-color: whitesmoke;
+}
+

@@ -12,4 +12,8 @@ function kphToMph() {
   document.getElementById('mph').value = kphRound.toFixed(1);
 }
 
-//Section 1: Need Clear Btn
+//Section 1: Clear Button
+document.getElementById('speed-clear-btn').addEventListener('click', () =>{
+  document.getElementById('mph').value = '';
+  document.getElementById('kph').value = '';
+});

@@ -25,7 +25,7 @@
         <div class="accordion-section">
           <h2 class="accordion-title">Speed</h2>
           <div class="accordion-content">
-            <form id="speed-calculator">
+            <form id="speed-converter">
               <div class="s-12 / m-6 margin-bottom form-group">
                   <div class="input-group">
                     <span>mph</span>
@@ -50,10 +50,23 @@
         <div class="accordion-section">
           <h2 class="accordion-title">Temperature</h2>
           <div class="accordion-content">
-            <p>Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam. Lorem ipsum dolor si
-              amet taciti sunt torquent ipsam proin montes quia netus quo minima sint. At aenean etiam suspendisse
-              ultricies auctor per nihil nisi. Ullam fermentum urna varius et saepe labore dignissim consectetuer fusce
-              elementum.</p>
+            <form id="temp-converter">
+              <div class="s-12 / m-6 margin-bottom form-group">
+                  <div class="input-group">
+                    <span>°F</span>
+                    <input type="number" class="form-control" id="fahrenheit" placeholder="degrees Fahrenheit">
+                  </div>
+              </div>
+              <div class="s-12 / m-6 form-group">
+                <div class="input-group margin-bottom">
+                  <span class="input-group-text">°C</span>
+                  <input type="number" class="form-control" id="celsius" placeholder="degrees Celsius">
+                </div>
+              </div>
+              <div class="line text-center">
+                <a class="l-4 s-12 button rounded-full-btn reload-btn center" id="temp-clear-btn"><i class="icon-reload"></i> Clear</a>
+              </div>
+            </form>
           </div>
         </div>
         <!-- Accordion section 3 (nested) -->

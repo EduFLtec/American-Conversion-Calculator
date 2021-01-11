@@ -21,73 +21,92 @@
   <div class="size-960 center">
     <div class="line">
       <div class="accordion">
-        <!-- Accordion section 1 -->
+        <!-- Accordion section 1 (nested) -->
         <div class="accordion-section">
-          <h2 class="accordion-title">Speed</h2>
-          <div class="accordion-content">
-            <form id="speed-converter">
-              <div class="s-12 / m-6 margin-bottom form-group">
-                  <div class="input-group">
-                    <span>mph</span>
-                    <input type="number" class="form-control" id="mph" placeholder="miles per hour">
-                  </div>
-              </div>
-              <div class="s-12 / m-6 form-group">
-                <div class="input-group margin-bottom">
-                  <span class="input-group-text">kph</span>
-                  <input type="number" class="form-control" id="kph" placeholder="kilometers per hour">
-                </div>
-              </div>
-              <div class="line text-center">
-                <a class="l-4 s-12 button rounded-full-btn reload-btn center" id="speed-clear-btn"><i class="icon-reload"></i> Clear</a>
-              </div>
-            </form>
-          </div>
-          
-        </div>
-
-        <!-- Accordion section 2 -->
-        <div class="accordion-section">
-          <h2 class="accordion-title">Temperature</h2>
-          <div class="accordion-content">
-            <form id="temp-converter">
-              <div class="s-12 / m-6 margin-bottom form-group">
-                  <div class="input-group">
-                    <span>°F</span>
-                    <input type="number" class="form-control" id="fahrenheit" placeholder="degrees Fahrenheit">
-                  </div>
-              </div>
-              <div class="s-12 / m-6 form-group">
-                <div class="input-group margin-bottom">
-                  <span class="input-group-text">°C</span>
-                  <input type="number" class="form-control" id="celsius" placeholder="degrees Celsius">
-                </div>
-              </div>
-              <div class="line text-center">
-                <a class="l-4 s-12 button rounded-full-btn reload-btn center" id="temp-clear-btn"><i class="icon-reload"></i> Clear</a>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- Accordion section 3 (nested) -->
-        <div class="accordion-section">
-          <h2 class="accordion-title">Distance, Length / Height</h2>
+          <h2 class="accordion-title">Speed/Distance, Length/Height, Area</h2>
           <div class="accordion-content">
             <!-- Nested accordion -->
             <div class="accordion">
-              <!-- Nested accordion section 3a-->
+              <!-- Nested accordion section 1a-->
               <div class="accordion-section">
-                <h2 class="accordion-title">Distance</h2>
+                <h2 class="accordion-title">Speed/Distance</h2>
                 <div class="accordion-content">
-                  <p>Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam. Lorem ipsum
-                    dolor si amet taciti sunt torquent ipsam proin montes quia netus quo minima sint. At aenean etiam
-                    suspendisse ultricies auctor per nihil nisi. Ullam fermentum urna varius et saepe labore dignissim
-                    consectetuer fusce elementum.</p>
+                  <form id="speed-converter">
+                    <div class="s-12 / m-6 margin-bottom form-group">
+                      <div class="input-group">
+                        <span>miles/mph</span>
+                        <input type="number" class="form-control" id="mph" placeholder="miles / mph">
+                      </div>
+                    </div>
+                    <div class="s-12 / m-6 form-group">
+                      <div class="input-group margin-bottom">
+                        <span class="input-group-text">kilometers/kph</span>
+                        <input type="number" class="form-control" id="kph" placeholder="kilometers / kph">
+                      </div>
+                    </div>
+                    <div class="line text-center">
+                      <a class="l-4 s-12 button rounded-full-btn reload-btn center" id="speed-clear-btn"><i
+                          class="icon-reload"></i> Clear</a>
+                    </div>
+                  </form>
                 </div>
               </div>
-              <!-- Nested accordion section 3b -->
+              <!-- Nested accordion section 1b -->
               <div class="accordion-section">
-                <h2 class="accordion-title">Length / Height</h2>
+                <h2 class="accordion-title">Length/Height</h2>
+                <div class="accordion-content">
+                  <form id="length-height-converter">
+                    <div class="s-12 / m-6 margin-bottom form-group">
+                      <div class="input-group">
+                        <span>inches(″)</span>
+                        <input type="number" class="form-control" id="in" placeholder="in.">
+                      </div>
+                    </div>
+                    <div class="s-12 / m-6 form-group">
+                      <div class="input-group margin-bottom">
+                        <span class="input-group-text">feet(′)</span>
+                        <input type="number" class="form-control" id="ft" placeholder="ft.">
+                      </div>
+                    </div>
+                    <div class="s-12 / m-6 form-group">
+                      <div class="input-group margin-bottom">
+                        <span class="input-group-text">yards</span>
+                        <input type="number" class="form-control" id="yd" placeholder="yd.">
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="s-12 / m-6 form-group">
+                      <div class="input-group margin-bottom">
+                        <span class="input-group-text">millimeters</span>
+                        <input type="number" class="form-control" id="mm" placeholder="mm">
+                      </div>
+                    </div>
+                    <div class="s-12 / m-6 form-group">
+                      <div class="input-group margin-bottom">
+                        <span class="input-group-text">centimeters</span>
+                        <input type="number" class="form-control" id="cm" placeholder="cm">
+                      </div>
+                    </div>
+                    <div class="s-12 / m-6 form-group">
+                      <div class="input-group margin-bottom">
+                        <span class="input-group-text">meters</span>
+                        <input type="number" class="form-control" id="m" placeholder="m">
+                      </div>
+                    </div>
+                    
+              
+                    
+
+                    <div class="line text-center">
+                      <a class="l-4 s-12 button rounded-full-btn reload-btn center" id="length-height-clear-btn"><i
+                          class="icon-reload"></i> Clear</a>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <!-- Nested accordion section 1c -->
+              <div class="accordion-section">
+                <h2 class="accordion-title">Area</h2>
                 <div class="accordion-content">
                   <p>Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam. Lorem ipsum
                     dolor si amet taciti sunt torquent ipsam proin montes quia netus quo minima sint. At aenean etiam
@@ -98,13 +117,39 @@
             </div>
           </div>
         </div>
-        <!-- Accordion section 4 (nested) -->
+
+        <!-- Accordion section 2 -->
         <div class="accordion-section">
-          <h2 class="accordion-title">Weight / Liquid (Cooking)</h2>
+          <h2 class="accordion-title">Temperature</h2>
+          <div class="accordion-content">
+            <form id="temp-converter">
+              <div class="s-12 / m-6 margin-bottom form-group">
+                <div class="input-group">
+                  <span>°F</span>
+                  <input type="number" class="form-control" id="fahrenheit" placeholder="degrees Fahrenheit">
+                </div>
+              </div>
+              <div class="s-12 / m-6 form-group">
+                <div class="input-group margin-bottom">
+                  <span class="input-group-text">°C</span>
+                  <input type="number" class="form-control" id="celsius" placeholder="degrees Celsius">
+                </div>
+              </div>
+              <div class="line text-center">
+                <a class="l-4 s-12 button rounded-full-btn reload-btn center" id="temp-clear-btn"><i
+                    class="icon-reload"></i> Clear</a>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!-- Accordion section 3 (nested) -->
+        <div class="accordion-section">
+          <h2 class="accordion-title">Weight, Fluid/Cooking</h2>
           <div class="accordion-content">
             <!-- Nested accordion -->
             <div class="accordion">
-              <!-- Nested accordion section 4a-->
+              <!-- Nested accordion section 3a-->
               <div class="accordion-section">
                 <h2 class="accordion-title">Weight</h2>
                 <div class="accordion-content">
@@ -114,9 +159,9 @@
                     consectetuer fusce elementum.</p>
                 </div>
               </div>
-              <!-- Nested accordion section 4b-->
+              <!-- Nested accordion section 3b-->
               <div class="accordion-section">
-                <h2 class="accordion-title">Liquid / Cooking</h2>
+                <h2 class="accordion-title">Fluid/Cooking</h2>
                 <div class="accordion-content">
                   <p>Con nonummy sem integer interdum volutpat dis eget eligendi aliquip dolorum magnam. Lorem ipsum
                     dolor si amet taciti sunt torquent ipsam proin montes quia netus quo minima sint. At aenean etiam
@@ -127,7 +172,8 @@
             </div>
           </div>
         </div>
-        <!-- Accordion section 5 -->
+
+        <!-- Accordion section 4 -->
         <div class="accordion-section">
           <h2 class="accordion-title">Tip Calculator</h2>
           <div class="accordion-content">

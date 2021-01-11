@@ -1,4 +1,4 @@
-// Accordion section 1: mph to kph speed converter
+// Accordion section 1a: Miles/mph to Kilometers/kph Speed/Distance converter
 document.getElementById('mph').addEventListener('input', mphToKph);
 document.getElementById('kph').addEventListener('input', kphToMph);
 
@@ -12,11 +12,13 @@ function kphToMph() {
   document.getElementById('mph').value = kphRound.toFixed(1);
 }
 
-//Section 1: Clear Button
+//Section 1a: Clear Button
 document.getElementById('speed-clear-btn').addEventListener('click', () =>{
   document.getElementById('mph').value = '';
   document.getElementById('kph').value = '';
 });
+
+
 
 // Accordion section 2: Fahrenheit to Celsius temp converter
 document.getElementById('fahrenheit').addEventListener('input', fToC);

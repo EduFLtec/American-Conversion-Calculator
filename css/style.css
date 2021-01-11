@@ -14,10 +14,7 @@ body {
   font-size: 1rem;
 }
 
-div.input-group {
-  font-size: 1.5rem;
-}
-
-div.line.text-center > a {
+div.input-group, div.line.text-center > a {
   font-size: 1.2rem;
 }
+
